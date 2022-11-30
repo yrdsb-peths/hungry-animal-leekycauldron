@@ -17,11 +17,11 @@ public class Elephant extends Actor
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("left")) {
-            turn(-5);
+            turn(-3);
         }
         if(Greenfoot.isKeyDown("right")) {
-            turn(5);
+            turn(3);
         }
-        move(5);
+        move(3);
     }    
 }
