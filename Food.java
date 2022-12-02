@@ -12,11 +12,21 @@ public class Food extends Actor
      * Act - do whatever the Food wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Food(){
+        GreenfootImage image = getImage();
+        image.scale(200, 100);
+        setImage(image);
+    }
     public void act() 
     {
         // Add your action code here.
-        if(isTouching(Elephant.class)) {
-            setLocation(Greenfoot.getRandomNumber(getWorld().getWidth()),0);
+        
+        if(isTouching(TopG.class)) {
+            String songs[] = {"breathe-air.mp3","shut-up-bitch.mp3"
+                ,"am-i-laughing.mp3"};
+            //play song
+            Greenfoot.playSound(songs[Greenfoot.getRandomNumber(songs.length)]);
+            setLocation(Greenfoot.getRandomNumber(getWorld().getWidth()),Greenfoot.getRandomNumber(getWorld().getHeight()));
         }
     }    
 }

@@ -13,14 +13,23 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
+        super(1000, 800, 1);
         
-        GreenfootImage bg = new GreenfootImage("background.jpg");
+        GreenfootImage bg = new GreenfootImage("dubai.jpg");
         super.setBackground(bg);
-        Elephant elephant = new Elephant();
-        addObject(elephant,300,300);
+        TopG topG = new TopG();
+        addObject(topG,300,300);
+        
+        
+        for(int i = 0; i < 50;i++){
+            Food apple = new Food();
+            addObject(apple,300,300);
+        }
+        //GreenfootSound music = new GreenfootSound("theme.mp3");
+        //music.playLoop();
     }
 }
