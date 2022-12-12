@@ -12,18 +12,28 @@ public class TopG extends Actor
      * Act - do whatever the TopG wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    boolean forward = true;
+    long last = System.currentTimeMillis();
     public void act() 
     {
         GreenfootImage image = getImage();
-        image.scale(100, 100);
         setImage(image);
+        image.scale(409, 227);
+        if(Greenfoot.isKeyDown("up")) { 
+            setLocation(getX(),getY()-10);
+        }
+        if(Greenfoot.isKeyDown("down")) {
+            setLocation(getX(),getY()+10);
+        }
         
-        if(Greenfoot.isKeyDown("left")) {
-            turn(-6);
+        if (forward){
+           move(1);
+        } else {
+            move(-1);
         }
-        if(Greenfoot.isKeyDown("right")) {
-            turn(6);
+        if(System.currentTimeMillis() - last > 1000) {
+            last = System.currentTimeMillis();
+            forward = !forward;
         }
-        move(6);
     }    
 }
