@@ -2,6 +2,8 @@
 
 By: Bryson Lee-Kwen
 
+## NOTE: THE ANIMAL CLASS HAS BEEN RENAMED TO "TopG".
+
 Hop in your Bugatti Chiron and dodge trash on the road as you try to become Top G!
 
 Increase your score by dodging all the trash cans.
