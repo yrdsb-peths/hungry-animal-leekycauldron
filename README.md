@@ -18,3 +18,10 @@ Ranking:
 
 
 Each new ranking grants you a new car, the goal is to hit a bugatti and become Top G.
+
+
+Features Added:
+- increased difficulty as time passes
+- skin cycle
+- score decreasing
+- play again option
