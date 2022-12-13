@@ -70,8 +70,7 @@ public class MyWorld extends World
         TopG topG = new TopG();
         addObject(topG,50,getHeight()/2);
         addTrash();
-        //GreenfootSound music = new GreenfootSound("theme.mp3");
-        //music.playLoop();
+        
 
    
     }

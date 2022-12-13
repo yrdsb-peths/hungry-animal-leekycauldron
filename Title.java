@@ -21,7 +21,8 @@ public class Title extends World
         bg.scale(600, 400);
         super.setBackground(bg);
         addObject(titleLabel,getWidth()/2,getHeight()-(getHeight()/4));
-        prepare();
+        GreenfootSound music = new GreenfootSound("winter.mp3");
+        music.playLoop();
     }
 
     boolean showing = true;

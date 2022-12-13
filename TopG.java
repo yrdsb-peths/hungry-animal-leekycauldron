@@ -17,7 +17,7 @@ public class TopG extends Actor
         setImage(image);
         image.scale(204, 113);
     }
-    String[] cars = {"broke.png","slave.png","escape.png","bugati.png"};
+    String[] cars = {"broke.png","slave.png","escape.png","bugatti.png"};
     boolean forward = true;
     long last = System.currentTimeMillis();
     
@@ -35,10 +35,10 @@ public class TopG extends Actor
             world.gameOver();
         }
         if(Greenfoot.isKeyDown("up")) { 
-            setLocation(getX(),getY()-(Math.abs(world.getSpeed())+5));
+            setLocation(getX(),getY()-(Math.abs(world.getSpeed())+15));
         }
         if(Greenfoot.isKeyDown("down")) {
-            setLocation(getX(),getY()+Math.abs(world.getSpeed())+5);
+            setLocation(getX(),getY()+Math.abs(world.getSpeed())+15);
         }
         
         if (forward){
