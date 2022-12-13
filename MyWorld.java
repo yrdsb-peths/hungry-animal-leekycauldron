@@ -15,7 +15,7 @@ public class MyWorld extends World
      * 
      */
     
-    private int speed = -6;
+    private int speed = -8;
     private int score = 0;
     private Label scoreLabel = new Label(score,69);
     public int getSpeed(){

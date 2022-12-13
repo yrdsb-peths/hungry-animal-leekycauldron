@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.lang.Math;
 /**
  * Write a description of class Trash here.
  * 
@@ -28,6 +28,11 @@ public class Trash extends Actor
         if(getX() < 1){
             setLocation(getX()+600,Greenfoot.getRandomNumber(world.getHeight()-1));
             world.increaseScore();
+            if(world.getScore() < 20){
+                world.setSpeed(world.getSpeed());
+            } else {
+                world.setSpeed(world.getSpeed()-world.getScore()/20);
+            }
         }
     }
 }
