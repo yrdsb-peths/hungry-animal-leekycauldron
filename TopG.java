@@ -17,8 +17,16 @@ public class TopG extends Actor
         setImage(image);
         image.scale(204, 113);
     }
+    String[] cars = {"broke.png","slave.png","escape.png","bugati.png"};
     boolean forward = true;
     long last = System.currentTimeMillis();
+    
+    private void setCar(int car) {
+        GreenfootImage img = new GreenfootImage(cars[car]);
+        img.scale(204, 113);
+        setImage(img);
+        
+    }
     public void act() 
     {
         MyWorld world = (MyWorld) getWorld();
@@ -41,6 +49,17 @@ public class TopG extends Actor
         if(System.currentTimeMillis() - last > 1000) {
             last = System.currentTimeMillis();
             forward = !forward;
+        }
+        int score = world.getScore();
+        String rank = "";
+        if (score < 10){
+            setCar(0);
+        } else if (score < 20) {
+            setCar(1);
+        } else if (score < 30) {
+            setCar(2);
+        } else {
+            setCar(3);
         }
     }    
 }
