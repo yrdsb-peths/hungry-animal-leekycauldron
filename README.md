@@ -1,14 +1,14 @@
-# Hungry Animal Tutorial
-This is the README.md file.
-Change this file to show your intended audience what you want them to see.
+# Top G Simulator
 
-You can use **Markdown** syntax to format this file to do things like **bold** or *italicize* text.
-[Markdown basics](https://www.markdownguide.org/getting-started/)
+By: Bryson Lee-Kwen
 
-This particular repository is the starting template for the Hungry Elephant tutorial.
+Hop in your Bugatti Chiron and dodge trash on the road as you try to become Top G!
 
-[Part 1: Greenfoot Basics](https://youtu.be/zxaa3X0MihI)
+Increase your score by dodging all the trash cans.
 
-[Part 2: Game Enhancements](https://youtu.be/TwID9i0Ey6o)
+Ranking:
 
-[Part 3: Final Touches](https://youtu.be/GT-eFwa4Abc)
+- 0-9 = Brokie
+- 10-19 = Slave
+- 20-29 = #escapedthematrix
+- 30+ = Top G
