@@ -19,13 +19,24 @@ public class GameOver extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         Label titleLabel = new Label("GAME OVER. Score: " + score,69);
-        
+        String rank = "";
+        if (score < 10){
+            rank = "Brokie";
+        } else if (score < 20) {
+            rank = "Slave";
+        } else if (score < 30) {
+            rank = "#escapedthematrix";
+        } else {
+            rank = "TOP G";
+        }
+        Label rankLabel = new Label("Rank: " + rank,50);
         titleLabel.setFillColor(Color.RED);
         GreenfootImage bg = new GreenfootImage("logo.png");
         bg.scale(600, 400);
         super.setBackground(bg);
         addObject(titleLabel,getWidth()/2,getHeight()-(getHeight()/4));
         addObject(playLabel,getWidth()/2,getHeight()-(getHeight()/6));
+        addObject(rankLabel,getWidth()/2,20);
     }
     
     boolean showing = true;
