@@ -15,8 +15,9 @@ public class MyWorld extends World
      * 
      */
     
-    private int speed = -11;
-    
+    private int speed = -6;
+    private int score = 0;
+    private Label scoreLabel = new Label(score,69);
     public int getSpeed(){
         return this.speed;
     }
@@ -29,8 +30,22 @@ public class MyWorld extends World
     }
     
     public void gameOver() {
-        GameOver gameOver = new GameOver();
+        GameOver gameOver = new GameOver(this.score);
         Greenfoot.setWorld(gameOver);
+    }
+    
+    public void increaseScore(){
+        this.score++;
+        scoreLabel.setValue(score);
+    }
+    
+    public void increaseScore(int score) {
+        this.score += score;
+        scoreLabel.setValue(score);
+    }
+    
+    public int getScore() {
+        return this.score;
     }
     public MyWorld()
     {    
@@ -40,7 +55,9 @@ public class MyWorld extends World
         background.setColor(Color.BLACK);//Add Background color
         background.fillRect(0,0,getWidth(),getHeight());
         
-
+        
+        addObject(scoreLabel,getWidth()/2,getHeight()-(getHeight()/4));
+        
         for(int i = 0; i < 3;i++){
             for(int j = 0; j < 5;j++){
                 Line line = new Line();

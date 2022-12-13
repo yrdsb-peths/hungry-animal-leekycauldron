@@ -26,8 +26,8 @@ public class Trash extends Actor
         
         
         if(getX() < 1){
-           setLocation(getX()+600,Greenfoot.getRandomNumber(world.getHeight()-1));
-                
+            setLocation(getX()+600,Greenfoot.getRandomNumber(world.getHeight()-1));
+            world.increaseScore();
         }
     }
 }
