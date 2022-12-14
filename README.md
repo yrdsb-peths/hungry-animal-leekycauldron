@@ -11,10 +11,10 @@ Increase your score by dodging all the trash cans.
 
 Ranking:
 
-- 0-9 = Brokie
-- 10-19 = Slave
-- 20-29 = #escapedthematrix
-- 30+ = Top G
+- 0-19 = Brokie
+- 20-39 = Slave
+- 40-79 = #escapedthematrix
+- 80+ = Top G
 
 
 Each new ranking grants you a new car, the goal is to hit a bugatti and become Top G.
