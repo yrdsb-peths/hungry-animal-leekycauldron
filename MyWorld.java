@@ -24,9 +24,13 @@ public class MyWorld extends World
     public void setSpeed(int speed){
         this.speed = speed;
     }
-    public void addTrash() {
+    public void addTrash(int num) {
         Trash trash = new Trash();
-        addObject(trash,getWidth(),Greenfoot.getRandomNumber(getHeight()-1));
+        int y = 275;
+        if(num == 0) {
+            y = 125;
+        }
+        addObject(trash,getWidth(),y);
     }
     
     public void gameOver() {
@@ -68,8 +72,8 @@ public class MyWorld extends World
         
         
         TopG topG = new TopG();
-        addObject(topG,50,getHeight()/2);
-        addTrash();
+        addObject(topG,50,125);
+        addTrash(Greenfoot.getRandomNumber(2));
         
 
    

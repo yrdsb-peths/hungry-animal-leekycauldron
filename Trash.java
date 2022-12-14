@@ -26,7 +26,12 @@ public class Trash extends Actor
         
         
         if(getX() < 1){
-            setLocation(getX()+600,Greenfoot.getRandomNumber(world.getHeight()-1));
+            int num = Greenfoot.getRandomNumber(2);
+            int y = 275;
+            if(num == 0) {
+                y = 125;
+            }
+            setLocation(getX()+600,y);
             world.increaseScore();
             if(world.getScore() < 20){
                 world.setSpeed(world.getSpeed());

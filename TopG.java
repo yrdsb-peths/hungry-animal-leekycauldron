@@ -35,10 +35,10 @@ public class TopG extends Actor
             world.gameOver();
         }
         if(Greenfoot.isKeyDown("up")) { 
-            setLocation(getX(),getY()-(Math.abs(world.getSpeed())+15));
+            setLocation(getX(),125);
         }
         if(Greenfoot.isKeyDown("down")) {
-            setLocation(getX(),getY()+Math.abs(world.getSpeed())+15);
+            setLocation(getX(),275);
         }
         
         if (forward){
