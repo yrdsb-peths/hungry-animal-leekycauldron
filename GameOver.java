@@ -20,11 +20,11 @@ public class GameOver extends World
         super(600, 400, 1); 
         Label titleLabel = new Label("GAME OVER. Score: " + score,69);
         String rank = "";
-        if (score < 10){
+        if (score < 20){
             rank = "Brokie";
-        } else if (score < 20) {
+        } else if (score < 40) {
             rank = "Slave";
-        } else if (score < 30) {
+        } else if (score < 80) {
             rank = "#escapedthematrix";
         } else {
             rank = "TOP G";

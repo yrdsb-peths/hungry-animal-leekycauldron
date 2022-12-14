@@ -33,10 +33,8 @@ public class Trash extends Actor
             }
             setLocation(getX()+600,y);
             world.increaseScore();
-            if(world.getScore() < 20){
-                world.setSpeed(world.getSpeed());
-            } else {
-                world.setSpeed(world.getSpeed()-world.getScore()/20);
+            if(world.getScore() % 10 == 0){
+                world.setSpeed(world.getSpeed()-1);
             }
         }
     }

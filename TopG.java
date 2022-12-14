@@ -52,11 +52,11 @@ public class TopG extends Actor
         }
         int score = world.getScore();
         String rank = "";
-        if (score < 10){
+        if (score < 20){
             setCar(0);
-        } else if (score < 20) {
+        } else if (score < 40) {
             setCar(1);
-        } else if (score < 30) {
+        } else if (score < 80) {
             setCar(2);
         } else {
             setCar(3);
